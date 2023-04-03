@@ -18,13 +18,25 @@ export default function Home({content} : {content:any}) {
   return (
     <>
       <Head>
-        <title>SkotaBlog</title>
+        <title>{content.title} | SkotaBlog</title>
         <meta name="description" content="Skota Blog" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="https://avatars.githubusercontent.com/u/91359399" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" />
 {/* <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" /> */}
+
+<meta property="og:url" content={`https://blog.skota11.com/blog${content.id}`} />
+ 
+<meta property="og:type" content="article" />
+ 
+<meta property="og:title" content={content.title} />
+ 
+<meta property="og:description" content="このブログは技術系やプログラミングの記事を投稿しています。" />
+ 
+<meta property="og:site_name" content="SkotaBlog" />
+ 
+<meta property="og:image" content={content.eyecatch.url} />
       </Head>
       <main className=''>
         <Header />

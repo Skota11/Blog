@@ -10,6 +10,7 @@ import { client } from "../libs/cms_client";
 import Header from "../components/header";
 
 export default function Home({contents} : {contents:any}) {
+  console.log(contents)
   return (
     <>
       <Head>
@@ -44,7 +45,8 @@ export default function Home({contents} : {contents:any}) {
             <Link className='not_under' href={`/blog/${content.id}`}>
               <div className='rounded-xl  bg-gray-300 p-8 shadow-lg duration-300'>
                 <img src={content.eyecatch.url} alt="" />
-                <p className='text-xl text-gray-800 py-4'>{content.title}</p>
+                <p className='text-xl text-gray-800 py-2'>{content.title}</p>
+                <p className=''>カテゴリー:{content.category.name}</p>
                 <span className='text-white bg-blue rounded-lg p-2'>この記事を読む</span>
               </div>
             </Link>
