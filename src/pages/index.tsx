@@ -10,7 +10,6 @@ import { client } from "../libs/cms_client";
 import Header from "../components/header";
 
 export default function Home({contents} : {contents:any}) {
-  console.log(contents)
   return (
     <>
       <Head>
@@ -59,6 +58,7 @@ export default function Home({contents} : {contents:any}) {
 }
 export const getStaticProps = async () => {
   const data = await client.get({ endpoint: "blogs" });
+  console.log(data)
   return {
     props: {
       contents: data.contents,
