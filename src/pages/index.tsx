@@ -14,7 +14,7 @@ import Header from "../components/header";
 import { element } from 'svelte/internal';
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home({contents}) {
+export default function Home({contents} : {contents:[]}) {
   return (
     <>
       <Head>
