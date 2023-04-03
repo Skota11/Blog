@@ -10,7 +10,7 @@ import { client } from "../../libs/cms_client";
 //components
 import Header from "../../components/header";
 
-export default function Home({content}) {
+export default function Home({contents} : {contents:[]}) {
   const create_t = Date.parse(content.createdAt);
   const c_d = new Date(create_t);
   const update_t = Date.parse(content.updatedAt);
