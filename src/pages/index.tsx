@@ -9,7 +9,7 @@ import { client } from "../libs/cms_client";
 //components
 import Header from "../components/header";
 
-export default function Home({contents} : {contents:[]}) {
+export default function Home({contents} : {contents:any}) {
   return (
     <>
       <Head>
@@ -39,18 +39,16 @@ export default function Home({contents} : {contents:[]}) {
        <div className='p-4'>
         <h2 className='text-2xl pb-4'>最新記事</h2>
         <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-5'>
-        {contents.map((content) => {
-          return (
+        {contents.map((content:any) => (
           <>
-          <Link className='not_under' href={`/blog/${content.id}`}>
-          <div className='rounded-xl  bg-gray-300 p-8 shadow-lg duration-300'>
-            <img src={content.eyecatch.url} alt=""/>
-            <p className='text-xl text-gray-800 py-4'>{content.title}</p>
-            <span className='text-white bg-blue rounded-lg p-2'>この記事を読む</span>
-          </div>
-          </Link>
-          </>)
-        })}
+            <Link className='not_under' href={`/blog/${content.id}`}>
+              <div className='rounded-xl  bg-gray-300 p-8 shadow-lg duration-300'>
+                <img src={content.eyecatch.url} alt="" />
+                <p className='text-xl text-gray-800 py-4'>{content.title}</p>
+                <span className='text-white bg-blue rounded-lg p-2'>この記事を読む</span>
+              </div>
+            </Link>
+          </>))}
         </div>
        </div>
       </main>
