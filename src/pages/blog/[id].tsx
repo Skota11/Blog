@@ -47,7 +47,7 @@ export default function Home({content} : {content:any}) {
     </>
   )
 }
-export const getServerSideProps = async ({params}) => {
+export const getServerSideProps = async ({params} : {params : any}) => {
   const data = await client
   .get({
     endpoint: 'blogs',
