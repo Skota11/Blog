@@ -35,6 +35,11 @@ export default function Home({contents} : {contents:any}) {
             <p>さらなるプロフィールは僕の <a href="https://skota11.com" target="_blank" rel="noopener noreferrer" >Website</a> までどうぞ！</p>
           </div>
           </div>
+          <div>
+          <span className='text-xl border-b-4 border-b-blue'>Link</span>
+          <p><a href="https://skota11.com" target="_blank" rel="noopener noreferrer">MyWebsite</a> | 僕のWebsiteです。お問い合わせなどもこちらからお願いします。</p>
+          <p><Link href="/policy">プライバシーポリシー</Link> | Cookieの使用や広告配信ツールに関するポリシー。必ずご確認ください。</p>
+          </div>
         </div>
        <div className='p-4'>
         <h2 className='text-2xl pb-4'>最新記事</h2>
@@ -43,7 +48,7 @@ export default function Home({contents} : {contents:any}) {
           <>
             <Link className='not_under' href={`/blog/${content.id}`}>
               <div className='rounded-xl  bg-gray-300 p-8 shadow-lg duration-300'>
-                <img src={content.eyecatch.url} alt="" />
+                <img src={content.eyecatch.url} alt=""/>
                 <p className='text-xl text-gray-800 py-2'>{content.title}</p>
                 <p className=''>カテゴリー:{content.category.name}</p>
                 <span className='text-white bg-blue rounded-lg p-2'>この記事を読む</span>

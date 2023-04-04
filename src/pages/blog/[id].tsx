@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
+
 
 import Avatar from '@mui/material/Avatar';
 
@@ -50,6 +52,7 @@ export default function Home(props: { content: {createdAt : string , updatedAt :
         <p>更新日 : {u_d.toLocaleDateString()}</p>
         <div className='flex'><p className="mr-2">Auther</p> <Avatar alt="Remy Sharp" src="https://avatars.githubusercontent.com/u/91359399" /></div>
           </div>
+          <img className='border-8' src={content?.eyecatch.url} />
         <h2 className='text-2xl pb-4 block'>{content?.title}</h2>
         <hr />
         <div  dangerouslySetInnerHTML={{__html : content?.content}}></div>
