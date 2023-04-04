@@ -61,9 +61,11 @@ export default function Home({content} : {content:any}) {
 }
 export const getStaticPaths = async () => {
   return {
-    paths: ["/blog/ggob_chx3ck0"],
-    fallback: true,
-  };
+    paths: [
+      { params: { id: 'ggob_chx3ck0' } },
+    ],
+    fallback: false  // 上記以外のパスでアクセスした場合は 404 ページにする
+  }
 };
 
 export const getStaticProps = async ({params} : {params : any}) => {
