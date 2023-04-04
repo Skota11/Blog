@@ -61,7 +61,7 @@ export default function Home({content} : {content:any}) {
 }
 export const getStaticPaths = async () => {
   return {
-    paths: ["/blog/anyid"],
+    paths: ["/blog/ggob_chx3ck0"],
     fallback: true,
   };
 };
