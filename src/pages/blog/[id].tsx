@@ -59,7 +59,14 @@ export default function Home({content} : {content:any}) {
     </>
   )
 }
-export const getServerSideProps = async ({params} : {params : any}) => {
+export const getStaticPaths = async () => {
+  return {
+    paths: ["/blog/anyid"],
+    fallback: true,
+  };
+};
+
+export const getStaticProps = async ({params} : {params : any}) => {
   const data = await client
   .get({
     endpoint: 'blogs',
