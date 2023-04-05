@@ -17,9 +17,6 @@ export default function Home({contents} : {contents:any}) {
         <meta name="description" content="Skota Blog" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="https://avatars.githubusercontent.com/u/91359399" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-{/* <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" /> */}
       </Head>
       <main className=''>
         <Header />
@@ -38,7 +35,7 @@ export default function Home({contents} : {contents:any}) {
           <div>
           <span className='text-xl border-b-4 border-b-blue'>Link</span>
           <p><a href="https://skota11.com" target="_blank" rel="noopener noreferrer">MyWebsite</a> | 僕のWebsiteです。お問い合わせなどもこちらからお願いします。</p>
-          <p><Link href="/policy">プライバシーポリシー</Link> | Cookieの使用や広告配信ツールに関するポリシー。必ずご確認ください。</p>
+          <p><Link href="/policy">ポリシー</Link> | Cookieの使用や広告配信ツールなどに関するポリシー。必ずご確認ください。</p>
           </div>
         </div>
        <div className='p-4'>
