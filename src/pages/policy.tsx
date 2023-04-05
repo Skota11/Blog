@@ -14,7 +14,7 @@ export default function Home({contents} : {contents:any}) {
   return (
     <>
       <Head>
-        <title>SkotaBlog</title>
+        <title>Policy | SkotaBlog</title>
         <meta name="description" content="Skota Blog" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="https://avatars.githubusercontent.com/u/91359399" />
@@ -31,7 +31,7 @@ export default function Home({contents} : {contents:any}) {
             <Line content="個人情報の利用目的" />
             <p>当ブログでは、お問い合わせやの際、名前やメールアドレス等の個人情報を入力いただく場合がございます。<br /> 取得した個人情報は、お問い合わせに対する回答や必要な情報を電子メールなどをでご連絡する場合に利用させていただくものであり、これらの目的以外では利用いたしません。</p>
             <Line content="広告について" />
-            <p>当ブログでは、第三者配信の広告サービス（Googleアドセンス）を利用しており、ユーザーの興味に応じた商品やサービスの広告を表示するため、クッキー（Cookie）を使用しております。<br />クッキーを使用することで当サイトはお客様のコンピュータを識別できるようになりますが、お客様個人を特定できるものではありません。<br />Cookieを無効にする方法やGoogleアドセンスに関する詳細は「広告 – ポリシーと規約 – Google」をご確認ください。</p>
+            <p>当ブログでは、第三者配信の広告サービス（Googleアドセンス）を利用しており、ユーザーの興味に応じた商品やサービスの広告を表示するため、クッキー（Cookie）を使用しております。<br />クッキーを使用することで当サイトはお客様のコンピュータを識別できるようになりますが、お客様個人を特定できるものではありません。<br />Cookieを無効にする方法やGoogleアドセンスに関する詳細は <a href="https://policies.google.com/technologies/ads?gl=jp" target="_blank" rel="noopener noreferrer">広告 – ポリシーと規約 – Google</a>をご確認ください。</p>
             <Line content="アクセス解析ツールについて" />
             <p>当ブログでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。このGoogleアナリティクスはトラフィックデータの収集のためにクッキー（Cookie）を使用しております。トラフィックデータは匿名で収集されており、個人を特定するものではありません。</p>
             </div>
