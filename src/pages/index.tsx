@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import Avatar from '@mui/material/Avatar';
+import Card from '@mui/material/Card';
 
 //libs
 import { client } from "../libs/cms_client";
@@ -26,7 +27,7 @@ export default function Home({contents} : {contents:any}) {
         <div className='p-4'>
           <span className='text-xl border-b-4 border-b-blue'>SelfIntroduction</span>
           <div className='pt-4 flex gap-x-4'>
-          <Avatar className='my-4' alt="Remy Sharp" src="https://avatars.githubusercontent.com/u/91359399" />
+          <Avatar className='my-4' alt="Skota11" src="https://avatars.githubusercontent.com/u/91359399" />
           <div>
           <p>Skota11 / Web開発や自宅鯖運営をしている中学生。NodeやDenoを使って開発してます。</p>
             <p>さらなるプロフィールは僕の <a href="https://skota11.com" target="_blank" rel="noopener noreferrer" >Website</a> までどうぞ！</p>
