@@ -41,7 +41,7 @@ export default function Home(props: { content: {createdAt : string , updatedAt :
  
 <meta property="og:image" content={content?.eyecatch.url} />
 
-//twitter
+{/* twitter */}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:creator" content="@Kota_pclive" />
       </Head>
