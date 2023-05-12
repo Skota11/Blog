@@ -41,17 +41,21 @@ export default function Home({contents} : {contents:any}) {
         </div>
        <div className='p-4'>
         <h2 className='text-2xl pb-4'>最新記事</h2>
-        <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-5'>
+        <div className=''>
         {contents.map((content:any) => (
           <>
+          <hr />
             <Link className='not_under' href={`/blog/${content.id}`}>
-              <div className='rounded-xl  bg-gray-300 p-8 shadow-lg duration-300'>
-                <img src={content.eyecatch.url} alt=""/>
-                <p className='text-xl text-gray-800 py-2'>{content.title}</p>
-                <p className=''>カテゴリー:{content.category.name}</p>
-                <span className='text-white bg-blue rounded-lg p-2'>この記事を読む</span>
+              <div className='p-8 flex grid'>
+                <img className='' src={content.eyecatch.url} alt="" width={300}/>
+                <div className=''>
+                <p className='text-lg ml-4 text-gray-800 py-2'>{content.title}</p>
+                <p className='text-sm'>カテゴリー:{content.category.name}</p>
+                </div>
+                <span className='text-white bg-blue rounded-lg p-2 text-center'>この記事を読む</span>
               </div>
             </Link>
+            
           </>))}
         </div>
        </div>

@@ -11,8 +11,8 @@ export default function Home() {
     <>
     <div className='w-full border-b-black border-b-4 p-4 flex gap-8' >
         <div className='text-white'>
-        <h1 className='text-xl'>SkotaBlog</h1>
-        <div className='flex gap-4'>
+        <h1 className='text-lg'>SkotaBlog</h1>
+        <div className='flex text-sm gap-4'>
             <span><Link href="/">Home</Link></span>
             <span><a href="https://skota11.com">Website</a></span>
         </div>

@@ -40,23 +40,30 @@ export default function Home(props: { content: {createdAt : string , updatedAt :
 <meta property="og:site_name" content="SkotaBlog" />
  
 <meta property="og:image" content={content?.eyecatch.url} />
+
+//twitter
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@Kota_pclive" />
       </Head>
       <main className=''>
         <Header />
        <div className='p-4'>
         <div className='flex place-content-center'>
         <div className='w-7/8 max-w-screen-md'>
-          <p> <Link href="/">トップへ</Link> </p>
-          <div className='flex gap-x-4'>
+          <p className='m-0'><Link href="/" className='border-b-2'>Top</Link> </p>
+          <div className='flex gap-x-4 text-sm'>
           <p>作成日 : {c_d.toLocaleDateString()}</p>
         <p>更新日 : {u_d.toLocaleDateString()}</p>
         <div className='flex'><p className="mr-2">Auther</p> <Avatar alt="Remy Sharp" src="https://avatars.githubusercontent.com/u/91359399" /></div>
           </div>
-          <img className='border-8' src={content?.eyecatch.url} />
-        <h2 className='text-2xl pb-4 block'>{content?.title}</h2>
+          <h2 className='text-2xl block'>{content?.title}</h2>
+          {/* <img className='border-8' src={content?.eyecatch.url} /> */}
         <hr />
         <div  dangerouslySetInnerHTML={{__html : content?.content}}></div>
         </div>
+        </div>
+        <div>
+
         </div>
        </div>
       </main>
