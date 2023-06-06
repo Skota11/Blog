@@ -3,7 +3,7 @@ import { GA_TRACKING_ID } from '../libs/gtag';
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="ja">
       <Head>
         {GA_TRACKING_ID && (
           <>
